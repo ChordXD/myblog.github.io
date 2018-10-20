@@ -3,7 +3,7 @@ title: 【计算几何/叉积+二分】POJ 2318 TOYS
 copyright: true
 date: 2018-08-18 23:26:11
 tags: 
- - 计算机和
+ - 计算几何
  - 叉积运用
  - 二分
  - ACM

@@ -4,6 +4,7 @@ copyright: true
 date: 2018-10-20 15:42:24
 tags:
  - Codeforces
+ - ACM
 categories:
  - 竞赛题解
  - Codeforcess
@@ -22,7 +23,7 @@ D Labyrinth
 ------------------------------------------
 ## A. Make a triangle!
 
-![A](myblog.github.io/photo/cf1.jpg)
+![A](photo/cf1.jpg)
 
 ### 题意
 给你三角形的三条边，你可以任意缩短任意一条边n厘米，代价是花费n个单位的时间，问使得三根木棒变成一个三角形所需要的最短时间是多少。
@@ -61,8 +62,10 @@ int main(void)
 }
 ```
 
+-------------------------------------------
+
 ## B. Equations of Mathematical Magic
-![B](myblog.github.io/photo/cf2.jpg)
+![B](photo/cf2.jpg)
 
 ### 题意
 给你一个方程与一种操作
@@ -106,8 +109,13 @@ int main(void)
     return 0;
 }
 ```
+
+-----------------------------
+
+
 ## C. Oh Those Palindromes
-![C](myblog.github.io/photo/cf3.jpg)
+
+![C](photo/cf3.jpg)
 
 ### 题意
 给出回文字串的定义，问给你一个字符串，如何构造可以使这个字符串的回文子串的数量最大。
@@ -131,8 +139,11 @@ int main(void)
 }
 ```
 
+-------------------------------
+
+
 ## D. Labyrinth
-![D](myblog.github.io/photo/cf4.jpg)
+![D](photo/cf4.jpg)
 ### 题意
 给你一个地图，地图上标记为'.'的点为可以移动的点，起始坐标与你最多可以向左和向右移动的步数，上下移动没有限制。问在这张地图当中，你最多可以访问多少个点。
 
