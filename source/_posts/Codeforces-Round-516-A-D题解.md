@@ -1,5 +1,5 @@
 ---
-title: 'Codeforces Round #516 (Div. 2, by Moscow Team Olympiad) A~D题解'
+title: Codeforces Round #516 (Div. 2, by Moscow Team Olympiad) A~D题解
 copyright: true
 date: 2018-10-20 15:42:24
 tags:
