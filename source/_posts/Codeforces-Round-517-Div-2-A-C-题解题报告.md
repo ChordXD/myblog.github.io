@@ -18,7 +18,7 @@ keywords: Codeforces Round #517 题解
  + C - Cram Time
 
 *欢迎来到暴力你都不会场*
-
+<!-- more -->
 ## A - Golden Plate
 >time limit per test: 1 second
 >memory limit per test: 256 megabytes
