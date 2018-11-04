@@ -1,5 +1,5 @@
 ---
-title: Codeforces Round #517 Div. 2 A~C 题解报告'
+title: Codeforces Round 517 Div. 2 A~C 题解报告
 copyright: true
 date: 2018-10-24 22:54:41
 tags: 
