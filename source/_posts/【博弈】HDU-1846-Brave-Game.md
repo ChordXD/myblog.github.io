@@ -2,7 +2,8 @@
 title: 【博弈】HDU 1846 Brave Game
 copyright: true
 date: 2018-12-24 15:58:31
-tags: - 巴士博弈
+tags:
+ - 巴士博弈
 categories:
  - 博弈
  - 巴士博弈
@@ -26,31 +27,31 @@ Time Limit: 1000/1000 MS (Java/Others)    Memory Limit: 32768/32768 K (Java/Othe
 5、  最先取光石子的一方为胜；
 
 如果游戏的双方使用的都是最优策略，请输出哪个人能赢。
- 
+
 
 ### Input
 输入数据首先包含一个正整数C(C<=100)，表示有C组测试数据。
 每组测试数据占一行，包含两个整数n和m（1<=n,m<=1000），n和m的含义见题目描述。
- 
+
 
 ### Output
 如果先走的人能赢，请输出“first”，否则请输出“second”，每个实例的输出占一行。
- 
+
 
 ### Sample Input
 2
 23 2
 4 3
- 
+
 
 ### Sample Output
 first
 second
- 
+
 
 ### Author
 lcy
- 
+
 
 ### Source
 ACM Short Term Exam_2007/12/13
