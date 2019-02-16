@@ -3,7 +3,10 @@ title: '【树型dp】HDU1520 Anniversary party '
 copyright: true
 date: 2019-02-15 20:53:23
 tags:
+ - dp
 categories:
+ - dp
+ - 树型dp
 keywords:
 description:
 ---
