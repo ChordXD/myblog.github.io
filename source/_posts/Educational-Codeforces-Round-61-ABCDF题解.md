@@ -11,7 +11,7 @@ description:
 ---
 
 Educational Codeforces Round 61 ABCDF题解
-<!-- more --s>
+<!-- more -->
 ## A.Regular Bracket Sequence
 ### 题意
 给你四种括号的数量，问是否存在一种组合方式让所有的括号匹配
