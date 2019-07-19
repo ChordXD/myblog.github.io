@@ -1,0 +1,10 @@
+chordblog.com/【栈】2019牛客暑期多校训练营（第一场）A-Equivalent-Prefixes.html
+chordblog.com/【第k大01背包】HDU-Bone-Collector-II.html
+chordblog.com/【负数01背包】POJ-2184-Cowow-Exhibition.html
+chordblog.com/【树】POJ-2003-Hire-and-Fire.html
+chordblog.com/【树】POJ-1330-Nearest-Common-Ancestors.html
+chordblog.com/【左偏树】洛谷-P1456-Monkey-King.html
+chordblog.com/【左偏树】洛谷-P2713-罗马游戏.html
+chordblog.com/【左偏树】洛谷-P3377-左偏树（可并堆）.html
+chordblog.com/【哈希】HRBUST-2300-下雪啦.html
+chordblog.com/【哈希】HRBUST-1013-Eqs.html

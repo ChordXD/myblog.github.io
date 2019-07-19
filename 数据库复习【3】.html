@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<meta name="google-site-verification" content="Wpc28qKamJa0TF4effZ7vqQSkgERtIUDhO7t5p0uyXM">
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="数据库,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="水滴是云" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="数据库复习记录3">
+<meta name="keywords" content="数据库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库复习【3】">
+<meta property="og:url" content="chordblog.com/数据库复习【3】.html">
+<meta property="og:site_name" content="水滴是云">
+<meta property="og:description" content="数据库复习记录3">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-19T11:43:47.260Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据库复习【3】">
+<meta name="twitter:description" content="数据库复习记录3">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="chordblog.com/数据库复习【3】.html">
+
+
+
+
+
+  <title>数据库复习【3】 | 水滴是云</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">水滴是云</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="chordblog.com/数据库复习【3】.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chord">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar_59734e0100610.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="水滴是云">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">数据库复习【3】</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-18T19:11:32+08:00">
+                2018-12-18
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-07-19T19:43:47+08:00">
+                2019-07-19
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/数据库复习【3】.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/数据库复习【3】.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/数据库复习【3】.html" class="leancloud_visitors" data-flag-title="数据库复习【3】">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  数据库复习记录3
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>第三章的SQL好多…..</p>
+<h3 id="集合运算"><a href="#集合运算" class="headerlink" title="集合运算"></a>集合运算</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">对应标识</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">并运算∪</td>
+<td style="text-align:center">union</td>
+</tr>
+<tr>
+<td style="text-align:center">交运算∩</td>
+<td style="text-align:center">intersect</td>
+</tr>
+<tr>
+<td style="text-align:center">差运算\</td>
+<td style="text-align:center">except</td>
+</tr>
+</tbody>
+</table>
+<p>首先考虑这两个查询结果：<br>c1表示再2009年球季学期开设的所有课程的集合。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> course_id</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">section</span></span><br><span class="line"><span class="keyword">where</span> semester = <span class="string">'Fall'</span> <span class="keyword">and</span> <span class="keyword">year</span> = <span class="number">2009</span>;</span><br></pre></td></tr></table></figure></p>
+<p>c2表示再2010年出你就学期开设的所有的课程的集合。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> course_id</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">section</span></span><br><span class="line"><span class="keyword">where</span> semester = <span class="string">'Spring'</span> <span class="keyword">and</span> <span class="keyword">year</span> = <span class="number">2010</span>;</span><br></pre></td></tr></table></figure></p>
+<h4 id="并运算"><a href="#并运算" class="headerlink" title="并运算"></a>并运算</h4><p>e.g：找出再2009年秋季开课后者再2010年春季开课或两个学期都开课的所有课程<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> course_id</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">section</span></span><br><span class="line"><span class="keyword">where</span> semester = <span class="string">'Fall'</span> <span class="keyword">and</span> <span class="keyword">year</span> = <span class="number">2009</span></span><br><span class="line"><span class="keyword">union</span> </span><br><span class="line"><span class="keyword">select</span> course_id</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">section</span></span><br><span class="line"><span class="keyword">where</span> semester = <span class="string">'Spring'</span> <span class="keyword">and</span> <span class="keyword">year</span> = <span class="number">2010</span>;</span><br></pre></td></tr></table></figure></p>
+<p>union 将自动去重，若需要保留重复，需使用union all关键字。<br>在我看来，若使用union all关键字，union写法等同于or<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> course_id</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">section</span></span><br><span class="line"><span class="keyword">where</span> (semester = <span class="string">'Fall'</span> <span class="keyword">and</span> <span class="keyword">year</span> = <span class="number">2009</span>) <span class="keyword">or</span> (semester = <span class="string">'Spring'</span> <span class="keyword">and</span> <span class="keyword">year</span> = <span class="number">2010</span>);</span><br></pre></td></tr></table></figure></p>
+<h4 id="交运算"><a href="#交运算" class="headerlink" title="交运算"></a>交运算</h4><p>若找出再2009年球季和2010年春季同时开课的所有课程的集合，则用交运算可以写出：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> course_id</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">section</span></span><br><span class="line"><span class="keyword">where</span> semester = <span class="string">'Fall'</span> <span class="keyword">and</span> <span class="keyword">year</span> = <span class="number">2009</span></span><br><span class="line"><span class="keyword">intersect</span></span><br><span class="line"><span class="keyword">select</span> course_id</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">section</span></span><br><span class="line"><span class="keyword">where</span> semester = <span class="string">'Spring'</span> <span class="keyword">and</span> <span class="keyword">year</span> = <span class="number">2010</span>;</span><br></pre></td></tr></table></figure></p>
+<p>同样，想保留重复元组，请使用intersect all代替intersect语句<br>保留时将保留重复元组整数再两个关系当中重复次数里最少的那个。</p>
+<h4 id="差运算"><a href="#差运算" class="headerlink" title="差运算"></a>差运算</h4><p>找出在2009年球季学期开课，但不在2010年春季学期开课的所有课程。<br>即某个元组其存在与c1但是不存在c2当中<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> course_id</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">section</span></span><br><span class="line"><span class="keyword">where</span> semester = <span class="string">'Fall'</span> <span class="keyword">and</span> <span class="keyword">year</span> = <span class="number">2009</span></span><br><span class="line"><span class="keyword">except</span></span><br><span class="line"><span class="keyword">select</span> course_id</span><br><span class="line"><span class="keyword">from</span> <span class="keyword">section</span></span><br><span class="line"><span class="keyword">where</span> semester = <span class="string">'Spring'</span> <span class="keyword">and</span> <span class="keyword">year</span> = <span class="number">2010</span>;</span><br></pre></td></tr></table></figure></p>
+<p>若想保留重复的元素，请用except all 关键词，结果中的重复数量等于在c1当中某一个重复关键的数量 - c2当中这个重复元素的出现次数。我觉的考试不会考。</p>
+<h3 id="空值"><a href="#空值" class="headerlink" title="空值"></a>空值</h3><p>空值是null，是SQL中一种特殊的值。<br>判断是否为空值使用谓词<strong>is null</strong>和<strong>is not null</strong><br>SQL将任何设计空值的比较运算视为unknown。<br>e.g:找出 instructor关系中salary为空值的所有教师。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">name</span></span><br><span class="line"><span class="keyword">from</span> instructor</span><br><span class="line"><span class="keyword">where</span> salary <span class="keyword">is</span> <span class="literal">null</span></span><br></pre></td></tr></table></figure></p>
+<p>如果salary为空值的说就为true，否则就是false。</p>
+<h3 id="聚集函数"><a href="#聚集函数" class="headerlink" title="聚集函数"></a>聚集函数</h3><p>聚集函数是以值的一个集合（集或者多重集）位输入，返回单个值的函数，SQL当中存在5中不同的聚集函数：</p>
+<ul>
+<li>平均值：avg</li>
+<li>最小值：min</li>
+<li>最大值：max</li>
+<li>综合：sum</li>
+<li>计数：count<h4 id="基本聚集"><a href="#基本聚集" class="headerlink" title="基本聚集"></a>基本聚集</h4>e.g: 找出Computer Science 系教师的平均工资。<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">avg</span>(salary)</span><br><span class="line"><span class="keyword">from</span> instructor</span><br><span class="line"><span class="keyword">where</span> dept_name = <span class="string">'Comp. Sci.'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>我们可以对结果使用as语句更名<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">avg</span>(salary) <span class="keyword">as</span> avg_salaary</span><br><span class="line">....</span><br></pre></td></tr></table></figure></p>
+<p>e.g:找出在2010年春季学期讲授一门课程的教师数<br>教师无论讲了多少门课，每次也只应该被计算一次，我们这里用distinct关键字去除重复。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">count</span>(<span class="keyword">distinct</span> <span class="keyword">ID</span>)</span><br><span class="line"><span class="keyword">from</span> teaches</span><br><span class="line"><span class="keyword">where</span> <span class="keyword">year</span> = <span class="number">2010</span> <span class="keyword">and</span> semester = <span class="string">'Spring'</span>;</span><br></pre></td></tr></table></figure></p>
+<h4 id="分组聚集"><a href="#分组聚集" class="headerlink" title="分组聚集"></a>分组聚集</h4><p>将聚集函数作用在一组元素集上就是分组聚集。<br>我们通常使用group by子句将所有属性上<strong>取值相同</strong>的元组分配在同一个组当中。<br>聚集函数只出现一个元组，所以每个分组只出现一个元组。<br>e.g:找出每个系的平均工资<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> dept_name,<span class="keyword">avg</span>(salary) <span class="keyword">as</span> avg_salary</span><br><span class="line"><span class="keyword">from</span> instructor</span><br><span class="line"><span class="keyword">group</span> <span class="keyword">by</span> dept_name;</span><br></pre></td></tr></table></figure></p>
+<p>e.g:找出所有教师的平均工资<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">avg</span>(salary)</span><br><span class="line"><span class="keyword">from</span> instructor;</span><br></pre></td></tr></table></figure></p>
+<p>整个关系被当成了一个分组。</p>
+<p>e.g:找出每个系在2010年春季学期讲授一门课程的教师人数。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> dept_name,<span class="keyword">count</span>(<span class="keyword">distinct</span> teaches.ID) <span class="keyword">as</span> instr_count</span><br><span class="line"><span class="keyword">from</span> instructor , teaches</span><br><span class="line"><span class="keyword">where</span> <span class="keyword">year</span> = <span class="number">2010</span> <span class="keyword">and</span> semester  = <span class="string">'Spring'</span> <span class="keyword">and</span> teaches.ID = instructor.ID</span><br><span class="line"><span class="keyword">group</span> <span class="keyword">by</span> dept_name;</span><br></pre></td></tr></table></figure></p>
+<p>在使用SQL查询的时候，一定要保证<strong>出现在select的语句中但没有被聚集的属性只可能为出现在group by子句当中。</strong><br>因为分组聚集只能出现一个元组，这一个元组却要现实一个没有被聚集的属性，而被分组的元组当中却有许多的未被聚集的属性，系统无法确定选择哪个选择。</p>
+<h4 id="having-子句"><a href="#having-子句" class="headerlink" title="having 子句"></a>having 子句</h4><p>having子句用于对于分组进行约束。<br>e.g:找出那些平均工资超过42000美元的那些戏中教师的平均工资。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> dept_name,<span class="keyword">avg</span>(salary) <span class="keyword">as</span> avg_salary</span><br><span class="line"><span class="keyword">from</span> instructor</span><br><span class="line"><span class="keyword">group</span> <span class="keyword">by</span> dept_name</span><br><span class="line"><span class="keyword">having</span> <span class="keyword">avg</span>(salary) &gt; <span class="number">42000</span>;</span><br></pre></td></tr></table></figure></p>
+<h4 id="select-from-having-group-by-where语句之间的执行顺序"><a href="#select-from-having-group-by-where语句之间的执行顺序" class="headerlink" title="select,from,having,group by,where语句之间的执行顺序"></a>select,from,having,group by,where语句之间的执行顺序</h4><p>1.首先根据from语句产生一个关系<br>2.若出现了where，将where语句上的约束应用在第一步产生的关系上。<br>3.如果出现了,group by语句，将第2步产生的关系按照group by语句后的属性进行分组。<br>4.若出现having语句，将having语句的约束条件作用在第三步产生的分组上。<br>5.最后，将最终分组产生的元组按照select子句后要显示的属性生成结果。</p>
+<p>e.g:对于在2009年讲授的每个课程段，如果课程段至少有2名学生选课，找出选修该课程段的所有学生的总学分的平均值。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> course_id,semester,<span class="keyword">year</span>,sec_id,<span class="keyword">avg</span>(tot_cred)</span><br><span class="line"><span class="keyword">from</span> takes,student</span><br><span class="line"><span class="keyword">where</span> <span class="keyword">year</span> = <span class="number">2009</span> <span class="keyword">and</span> student.ID = takes.ID</span><br><span class="line"><span class="keyword">group</span> <span class="keyword">by</span> course_id,semester,<span class="keyword">year</span>,sec_id</span><br><span class="line"><span class="keyword">having</span> <span class="keyword">count</span>(student.ID) &gt;= <span class="number">2</span>;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/数据库复习【3】.html">数据库复习【3】</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Chord 的个人博客">Chord</a></p>
+  <p><span>发布时间:</span>2018年12月18日 - 19:11</p>
+  <p><span>最后更新:</span>2019年07月19日 - 19:43</p>
+  <p><span>原始链接:</span><a href="/数据库复习【3】.html" title="数据库复习【3】">chordblog.com/数据库复习【3】.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="chordblog.com/数据库复习【3】.html" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+	});
+    });  
+</script>
+
+      </div>
+    
+    
+    
+
+    
+
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束，感谢阅读(。・∀・)ノ-------------</div>
+    
+</div>
+  
+  </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数据库/" rel="tag"> <i class="fa fa-tag"></i> 数据库</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/数据库复习【2】.html" rel="next" title="数据库复习【2】">
+                <i class="fa fa-chevron-left"></i> 数据库复习【2】
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/【博弈】HDU-1846-Brave-Game.html" rel="prev" title="【博弈】HDU 1846 Brave Game">
+                【博弈】HDU 1846 Brave Game <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar_59734e0100610.jpg" alt="Chord">
+            
+              <p class="site-author-name" itemprop="name">Chord</p>
+              <p class="site-description motion-element" itemprop="description">失败的唯一途径是自我放弃。</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">58</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">41</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a rel="external nofollow" href="https://github.com/ChordXD" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a rel="external nofollow" href="https://github.com/ChordXD/HduOJ" target="_blank" title="hdu个人整理">
+                      
+                        <i class="fa fa-fw fa-github"></i>hdu个人整理</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a rel="external nofollow" href="https://github.com/ChordXD/POJ" target="_blank" title="poj个人整理">
+                      
+                        <i class="fa fa-fw fa-github"></i>poj个人整理</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a rel="external nofollow" href="https://github.com/ChordXD/HrbustOJ" target="_blank" title="hubustoj个人整理">
+                      
+                        <i class="fa fa-fw fa-github"></i>hubustoj个人整理</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.csdn.net/peng0614" title="前csdn博客" rel="external nofollow" target="_blank">前csdn博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#集合运算"><span class="nav-number">1.</span> <span class="nav-text">集合运算</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#并运算"><span class="nav-number">1.1.</span> <span class="nav-text">并运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#交运算"><span class="nav-number">1.2.</span> <span class="nav-text">交运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#差运算"><span class="nav-number">1.3.</span> <span class="nav-text">差运算</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#空值"><span class="nav-number">2.</span> <span class="nav-text">空值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聚集函数"><span class="nav-number">3.</span> <span class="nav-text">聚集函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本聚集"><span class="nav-number">3.1.</span> <span class="nav-text">基本聚集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分组聚集"><span class="nav-number">3.2.</span> <span class="nav-text">分组聚集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#having-子句"><span class="nav-number">3.3.</span> <span class="nav-text">having 子句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#select-from-having-group-by-where语句之间的执行顺序"><span class="nav-number">3.4.</span> <span class="nav-text">select,from,having,group by,where语句之间的执行顺序</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chord</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a rel="external nofollow" class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a rel="external nofollow" class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共50.2k字</span>
+</div>
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'JPIGxU0HxCIYa8hn50SySve4-gzGzoHsz',
+        appKey: 'KhY3H5OTbj0aWCvL1xWbt7TP',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("JPIGxU0HxCIYa8hn50SySve4-gzGzoHsz", "KhY3H5OTbj0aWCvL1xWbt7TP");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"superSample":2,"width":100,"height":200,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false});</script></body>
+</html>
