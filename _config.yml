@@ -80,7 +80,7 @@ theme: next
 deploy:
 - type: git
   repository: 
-    https://github.com/ChordXD/myblog.github.io
+    https://git.dev.tencent.com/ChordXD/Chord.tencentGit.io
   branch: 
     master
 
